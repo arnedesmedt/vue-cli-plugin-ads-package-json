@@ -1,0 +1,36 @@
+{
+  "name": "vue-cli-plugin-ads-package-json",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.11.2",
+    "gitlab": "^4.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-standard": "^3.0.3"
+  },
+  "main": "index.js",
+  "author": "Arne De Smedt <arnedesmdt@gmail.com> (https://twitter.com/ArneSmedt)",
+  "description": "A Vue CLI plugin to add some extra info to my package.json file.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json/issues"
+  },
+  "homepage": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json#readme",
+  "keywords": [
+    "vue",
+    "cli",
+    "plugin",
+    "package.json"
+  ],
+  "license": "MIT"
+}
