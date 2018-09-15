@@ -1,4 +1,3 @@
-const { execSync } = require('child_process');
 const octokit = require('@octokit/rest')();
 
 module.exports = (api, options, rootOptions) => {
