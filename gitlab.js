@@ -1,4 +1,3 @@
-const { execSync } = require('child_process');
 const ProjectsGitlabApi = require('gitlab/dist/latest/services/Projects').default;
 
 const createGitLabProjectsApi = (gitlabToken) => {
