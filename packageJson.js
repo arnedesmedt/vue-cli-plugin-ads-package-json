@@ -41,12 +41,12 @@ module.exports = (api, options, rootOptions) => {
         ],
         repository: {
             type: 'git',
-            url: 'https://gitlab.com/arnedesmedt/' + rootOptions.projectName + '.git',
+            url: 'https://github.com/arnedesmedt/' + rootOptions.projectName + '.git',
         },
         bugs: {
-            url: 'https://gitlab.com/arnedesmedt/' + rootOptions.projectName + '/issues',
+            url: 'https://github.com/arnedesmedt/' + rootOptions.projectName + '/issues',
         },
-        homepage: 'https://gitlab.com/arnedesmedt/' + rootOptions.projectName,
+        homepage: 'https://github.com/arnedesmedt/' + rootOptions.projectName,
         author: 'Arne De Smedt <arnedesmdt@gmail.com> (https://twitter.com/ArneSmedt)',
         license: 'MIT',
         keywords: options.keywords,
