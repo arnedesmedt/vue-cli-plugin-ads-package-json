@@ -32,5 +32,8 @@
     "plugin",
     "package.json"
   ],
+  "files": [
+    "*.js"
+  ],
   "license": "MIT"
 }
