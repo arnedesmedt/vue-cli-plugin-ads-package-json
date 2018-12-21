@@ -20,7 +20,7 @@ module.exports = (api, options, rootOptions) => {
         } catch (e) {
             /* eslint-disable no-console */
             console.log(e);
-            console.log(`Could not create new gitlab project with name '${rootOptions.projectName}'.`)
+            console.log(`Could not create new gitlab project with name '${rootOptions.projectName}'.`);
             /* eslint-enable no-console */
         }
     }
