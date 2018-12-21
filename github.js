@@ -7,7 +7,7 @@ module.exports = (api, options, rootOptions) => {
             token: options.githubToken,
         });
 
-        octokit.repos.create({
+        octokit.repos.createForAuthenticatedUser({
             name: rootOptions.projectName,
             description: options.description,
             private: false,
