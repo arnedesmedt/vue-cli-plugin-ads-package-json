@@ -10,8 +10,10 @@ const createGitlabProject = (api, options) => {
     api
         .create(options)
         .catch(error => {
+            /* eslint-disable no-console */
             console.log(error);
             console.error(`Could not create new gitlab project with name '${options.name}'.`);
+            /* eslint-enable no-console */
         });
 };
 
