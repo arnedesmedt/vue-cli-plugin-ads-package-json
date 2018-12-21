@@ -10,12 +10,10 @@ const createGitlabProject = (api, options) => {
     api
         .create(options)
         .catch(error => {
+            /* eslint-disable no-console */
             console.log(error);
-            console.error(
-                'Could not create new gitlab project with name \'' +
-                options.name +
-                '\'. Name could already bin taken.'
-            );
+            console.error(`Could not create new gitlab project with name '${options.name}'.`);
+            /* eslint-enable no-console */
         });
 };
 
@@ -41,6 +39,9 @@ module.exports = (api, options, rootOptions) => {
             approvals_before_merge: 1,
         };
 
-        createGitlabProject(gitlabProjectsApi, gitlabOptions);
+        createGitlabProject(
+            gitlabProjectsApi,
+            gitlabOptions
+        );
     }
 };
