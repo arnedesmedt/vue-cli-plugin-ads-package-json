@@ -6,7 +6,10 @@ module.exports = (api, options, rootOptions) => {
     if (!options.keywords) {
         options.keywords = [];
     }
-    options.keywords = options.keywords.split(',').map(keyword => keyword.trim());
+
+    options.keywords = options.keywords
+        .split(',')
+        .map(keyword => keyword.trim());
 
     github(api, options, rootOptions);
     gitlab(api, options, rootOptions);

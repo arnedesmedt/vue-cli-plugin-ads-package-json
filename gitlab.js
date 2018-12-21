@@ -11,11 +11,7 @@ const createGitlabProject = (api, options) => {
         .create(options)
         .catch(error => {
             console.log(error);
-            console.error(
-                'Could not create new gitlab project with name \'' +
-                options.name +
-                '\'. Name could already bin taken.'
-            );
+            console.error(`Could not create new gitlab project with name '${options.name}'.`);
         });
 };
 
@@ -41,6 +37,9 @@ module.exports = (api, options, rootOptions) => {
             approvals_before_merge: 1,
         };
 
-        createGitlabProject(gitlabProjectsApi, gitlabOptions);
+        createGitlabProject(
+            gitlabProjectsApi,
+            gitlabOptions
+        );
     }
 };

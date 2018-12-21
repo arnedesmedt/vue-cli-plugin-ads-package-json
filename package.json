@@ -1,39 +1,43 @@
 {
-  "name": "vue-cli-plugin-ads-package-json",
-  "version": "1.0.2",
-  "scripts": {
-    "lint": "vue-cli-service lint",
-    "preversion": "npm run lint",
-    "postversion": "git push && git push --tags"
-  },
-  "dependencies": {
-    "@octokit/rest": "^15.11.2",
-    "gitlab": "^4.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
-    "@vue/eslint-config-standard": "^3.0.3"
-  },
-  "main": "index.js",
-  "author": "Arne De Smedt <arnedesmdt@gmail.com> (https://twitter.com/ArneSmedt)",
-  "description": "A Vue CLI plugin to add some extra info to my package.json file.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json.git"
-  },
-  "bugs": {
-    "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json/issues"
-  },
-  "homepage": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json#readme",
-  "keywords": [
-    "vue",
-    "cli",
-    "plugin",
-    "package.json"
-  ],
-  "files": [
-    "*.js"
-  ],
-  "license": "MIT"
+    "private": false,
+    "name": "vue-cli-plugin-ads-package-json",
+    "description": "A Vue CLI plugin to add some extra info to my package.json file.",
+    "license": "MIT",
+    "author": "Arne De Smedt <arnedesmdt@gmail.com> (https://twitter.com/ArneSmedt)",
+    "homepage": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json.git"
+    },
+    "bugs": {
+        "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json/issues"
+    },
+    "version": "1.0.2",
+    "main": "index.js",
+    "files": [
+        "*.js"
+    ],
+    "scripts": {
+        "lint": "vue-cli-service lint .",
+        "package-lint": "prettier-package-json --write --tab-width=4 ./package.json",
+        "preversion": "export NODE_ENV=production && npm run lint && npm run package-lint",
+        "postversion": "git push && git push --tags"
+    },
+    "dependencies": {
+        "@octokit/rest": "^16.3.0",
+        "gitlab": "^4.3.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-eslint": "^3.2.1",
+        "@vue/cli-service": "^3.2.0",
+        "@vue/eslint-config-standard": "^4.0.0",
+        "eslint-config-ads": "^1.0.4",
+        "prettier-package-json": "^2.0.1"
+    },
+    "keywords": [
+        "cli",
+        "package.json",
+        "plugin",
+        "vue"
+    ]
 }

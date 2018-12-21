@@ -1,4 +1,4 @@
-const { execSync } = require('child_process');
+const {execSync} = require('child_process');
 const gitlabToken = execSync('pass Home/gitlab-api').toString('utf8').trim();
 const githubToken = execSync('pass Home/github-api').toString('utf8').trim();
 
