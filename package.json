@@ -18,7 +18,7 @@
         "*.js"
     ],
     "scripts": {
-        "lint": "vue-cli-service lint .",
+        "lint": "vue-cli-service lint",
         "package-lint": "prettier-package-json --write --tab-width=4 ./package.json",
         "preversion": "export NODE_ENV=production && npm run lint && npm run package-lint",
         "postversion": "git push && git push --tags"

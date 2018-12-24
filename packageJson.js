@@ -7,7 +7,7 @@ module.exports = (api, options, rootOptions) => {
     let postversion = [];
 
     if (api.hasPlugin('eslint')) {
-        scripts['lint'] = 'vue-cli-service lint .';
+        scripts['lint'] = 'vue-cli-service lint';
         preversion.push('npm run lint');
     }
 
