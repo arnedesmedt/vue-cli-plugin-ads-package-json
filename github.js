@@ -7,6 +7,9 @@ module.exports = (api, options, rootOptions) => {
             token: options.githubToken,
         });
 
+        // todo create develop branch
+        // todo add remote github url
+
         try {
             octokit.repos.createForAuthenticatedUser({
                 name: rootOptions.projectName,
