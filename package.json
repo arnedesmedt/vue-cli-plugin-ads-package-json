@@ -12,7 +12,7 @@
     "bugs": {
         "url": "https://github.com/arnedesmedt/vue-cli-plugin-ads-package-json/issues"
     },
-    "version": "1.0.7",
+    "version": "1.0.8",
     "main": "index.js",
     "files": [
         "*.js"
