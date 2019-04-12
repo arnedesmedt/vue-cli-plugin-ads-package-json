@@ -24,12 +24,12 @@
         "postversion": "git push && git push --tags"
     },
     "dependencies": {
-        "@octokit/rest": "^16.16.5",
-        "gitlab": "^4.3.0"
+        "@octokit/rest": "^16.23.4",
+        "gitlab": "^4.5.1"
     },
     "devDependencies": {
-        "@vue/cli-plugin-eslint": "^3.4.1",
-        "@vue/cli-service": "^3.4.1",
+        "@vue/cli-plugin-eslint": "^3.5.1",
+        "@vue/cli-service": "^3.5.3",
         "@vue/eslint-config-standard": "^4.0.0",
         "eslint-config-ads": "^1.0.7",
         "prettier-package-json": "^2.1.0"

@@ -1,10 +1,9 @@
-const octokit = require('@octokit/rest')();
+const Octokit = require('@octokit/rest');
 
 module.exports = (api, options, rootOptions) => {
     if (options.githubToken) {
-        octokit.authenticate({
-            type: 'token',
-            token: options.githubToken,
+        const octokit = new Octokit({
+            auth: `token ${options.githubToken}`,
         });
 
         // todo create develop branch

@@ -4,7 +4,7 @@ const github = require('./github');
 
 module.exports = (api, options, rootOptions) => {
     if (!options.keywords) {
-        options.keywords = [];
+        options.keywords = '';
     }
 
     options.keywords = options.keywords
