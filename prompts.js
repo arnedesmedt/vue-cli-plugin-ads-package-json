@@ -13,13 +13,13 @@ module.exports = [
     },
     {
         name: 'gitlabToken',
-        message: 'Gitlab token (if no specified, no gitlab repository will initiated): ',
+        message: 'Gitlab token (if you don\'t want a gitlab repository type \'n\'): ',
         default: gitlabToken,
         type: 'password',
     },
     {
         name: 'githubToken',
-        message: 'Github token (if no specified, no github repository will initiated): ',
+        message: 'Github token (if you don\'t want a github repository type \'n\'): ',
         default: githubToken,
         type: 'password',
     },
